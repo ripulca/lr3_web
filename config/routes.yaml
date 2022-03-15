@@ -1,0 +1,32 @@
+index:
+    path: /
+    controller: App\Controller\MainController::startPage
+    methods:    GET
+detail:
+    path: /photo/{id}
+    controller: App\Controller\MainController::detailpage
+    methods:    GET
+addpage:
+    path: /add_photo
+    controller: App\Controller\MainController::addPost
+    methods:    GET
+showmore:
+    path: /page/{id}
+    controller: App\Controller\MainController::showmore
+    methods:    GET
+authorization:
+    path: /authorization
+    controller: App\Controller\MainController::authorize
+    methods:    GET
+registration:
+    path: /registration
+    controller: App\Controller\MainController::register
+    methods:    GET
+checklog:
+    path: /check_log
+    controller: App\Controller\MainController::checkUserAuthorization
+    methods:    GET
+logout:
+    path: /exit
+    controller: App\Controller\ExitController::exit
+    methods:    GET

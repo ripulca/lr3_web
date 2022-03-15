@@ -1,0 +1,126 @@
+.main{
+    /* margin: 0 20px; */
+}
+
+.main_info{
+    margin: 80px 20px;
+    height: 70vh;
+    position: relative;
+}
+
+.main_img_container{
+    position: absolute;
+    width: 100%;
+    height: inherit;
+}
+
+.main_info_container{
+    height: inherit;
+    position: relative;
+    border-radius: 30px;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1465471736877-2c8bf4536ebf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1076&q=80");
+}
+
+.main_info_container::after{
+    content: '';
+    position: absolute;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.main_info_text{
+    padding: 10vw;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    line-height: 2;
+    position: relative;
+    color: white;
+}
+
+.main_photos_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* grid-template-columns: repeat(var(--columns),minmax(0,1fr)); */
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+}
+
+.main_photo_container{
+    background-color: black;
+    width: 100%;
+    /* padding: 50px 0; */
+    /* margin: 20px 0; */
+}
+
+.main_photo_container>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:100%;
+    /* border-radius: 50px; */
+}
+
+.main_photo_info{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin: 20px 20px;
+}
+
+.main_photo_info_interactive{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_comments{
+    padding: 30px;
+    margin: 30px;
+}
+
+.main_photo_info_buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.post_btn{
+    display: flex;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 0 1vw;
+    align-items: center;
+}
+
+/* .main_photos_row{
+    --row-gutter: 5px;
+    row-gap: var(--row-gutter);
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: space-around;
+} */
+
+.photo_card{
+    overflow: hidden;
+    border-radius: 50px;
+    margin: 10px 10px;
+}
+
+.main_btn_container{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.add_content_btn{
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 0 1vw;
+    font-size: 20px;
+}

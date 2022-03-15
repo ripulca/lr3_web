@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.neomorf_flat{
+    border-radius: 50px;
+    background: #a09292;
+    box-shadow:  13px 13px 26px #7a6f6f,
+                 -13px -13px 26px #c6b5b5;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+svg{
+    background-color: initial;
+    fill: rgba(255, 255, 255, 0.7);
+}
+
+button{
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+}
+
+input, button{
+    border: none;
+    outline:none;
+}
+
+body, html{
+    height: 100%;
+    background: #a09292;
+}
+
+.app{
+    /* width: 100%; */
+    color: #000;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 870px) {
+    .app{
+        font-size:15px;
+    }
+}
